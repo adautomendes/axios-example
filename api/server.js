@@ -7,6 +7,7 @@ server.use(restify.plugins.bodyParser());
 
 server.post('/', (req, res) => {
     let { x } = req.body;
+    console.log(`API recebeu do Client => ${x}`);
     
     let url = `http://localhost:3001/`;
     let postData = {
