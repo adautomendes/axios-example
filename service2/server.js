@@ -7,18 +7,18 @@ server.use(restify.plugins.bodyParser());
 
 server.post('/', (req, res) => {
     let { x } = req.body;
-    console.log(`Service 2 recebeu da API => ${x}`);
+    console.log(`API => Service 2: ${x}`);
     
     let url = `http://localhost:3000/`;
     let postData = {
         x: ++x
     }
     let axiosConfig = {};
-    console.log(`Service 2 enviou p/ Service 1 => ${postData.x}`);
+    console.log(`Service 2 => Service 1: ${postData.x}`);
 
     axios.post(url, postData, axiosConfig)
         .then((response) => {
-            console.log(`Service 2 recebeu do Service 1 => ${response.data.x}`);
+            console.log(`Service 1 => Service 2: ${response.data.x}`);
             return res.json(response.data);
         })
         .catch((error) => {
