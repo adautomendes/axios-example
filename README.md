@@ -11,7 +11,7 @@ This project contains an didatic example of 3 distinct servers which can be depl
 `POST http://<api_host>:<api_port>/`: Sends a request with a number in the body:
 
 ### Request Sample
-``
+``json
 {
     x: 1
 }
