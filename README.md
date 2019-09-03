@@ -11,11 +11,11 @@ This project contains an didatic example of 3 distinct servers which can be depl
 `POST http://<api_host>:<api_port>/`: Sends a request with a number in the body:
 
 ### Request Sample
-``
+```json
 {
-    x: 1
+    "x": 1
 }
-``
+```
 
 ## Dependencies and Execution
 Before run each server run the following command (once in each folder) to install the proper dependencies:
