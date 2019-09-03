@@ -13,7 +13,7 @@ This project contains an didatic example of 3 distinct servers which can be depl
 ### Request Sample
 ```json
 {
-    x: 1
+    "x": 1
 }
 ```
 
